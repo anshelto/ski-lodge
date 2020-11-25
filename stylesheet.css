@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*Global Styles */
+
+  html {
+     
+      scroll-behavior: smooth;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Noto Sans JP', sans-serif;
+  }
+
+
+
+  a {
+      text-decoration: none;
+    }
+ 
+   p {
+       font-size: 1.8rem;
+       font-weight: 400;
+
+   }
+   ul {
+       list-style-type: none;
+   }
+
+   img {
+       width: 100%;
+       display: block;
+   }
+
+   section {
+       width: 100vw;
+   }
+ 
+
+
+
+.hero {
+    
+    width: 100%;
+    height: 700px;
+    padding-top:10em;
+    padding-bottom: 15em;
+    
+    
+    background: url("https://images.unsplash.com/photo-1518085050105-3c33befa5442?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+   
+.section-title {
+  color: white;
+  
+}
+
+.section-title h1{
+
+       padding-top: 4em;
+       color: white;
+       text-transform: uppercase;
+       font-weight: 800;
+       font-size: 1.5em;
+       line-height: 1.2em;
+       
+   }
+
+   .center {
+      display: flex;
+       justify-content: center;
+
+       
+   }
+   .section-title p {
+    color: white;
+    margin-top: 7em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+   }
+   
+.section-title span {
+       position: absolute;
+       opacity: 0.3;
+       font-size: 3.5rem;
+       line-height: 1.1em;
+       transform: translateY(-65%);
+   }
+   
+.deals {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 8em;
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: .7em;
+    text-transform: uppercase;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+
+}
+
+
+
+.deals::before {
+    content:'';
+    position: absolute;
+    width: 5rem;
+    height:3rem;
+    border-radius: 3em;
+    background-color: grey;
+    z-index: -1;
+    
+}
+
+.deals:hover, 
+.deals:focus {
+    transform:scale(1.2);
+    opacity: 0.9;
+    }
+
+
+
+.tog-img {
+    width: 4rem;
+    margin-left: 0;
+}
+
+.top-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list {
+    width: 90%;
+    
+    height: 100%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: rgba(0,0,0.3);
+    font-size: .6em;
+    font-weight: 600;
+    
+
+}
+
+.specials::before,
+.specials::after {
+    content:'';
+    bottom:2em;
+    position: absolute;
+    
+    border-radius: 2em;
+
+}
+
+.specials {
+    width: 10em;
+    height:9rem;
+    bottom: 2em;
+    border-radius: 50%;
+    background-color:orange;
+}
+
+.primary-text {
+    padding: 15rem;
+}
+
+
+
+
+
+
+.primary-para {
+    margin-top: 3em;
+    color: rgba(0,0,0,0.3);
+    font-weight: 700;
+}
+
+/* End of header section */
+
+/*Sponsers*/
+
+.middle-nav {
+    width: 100%;
+    height: 100%;
+   
+}
+.middle-list {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.middle-list li {
+    padding-right: .5em;
+    padding-left: .5em;
+}
+/* End of Sponsers */
+
+/* Start of Offerings */
+.offering {
+    padding-top: 1em;
+    margin-bottom: 3em;
+    }
+
+.we {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.spilt {
+    display: flex;
+    flex-direction: column;
+}
+.column {
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
+
+.icon {
+   width: 50%;
+   margin: 0 auto;
+   padding-bottom: 2em;
+}
+
+.column-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    line-height: 1em;
+    font-weight: 700;
+    color: rgba(0,0,0,.4);
+}
+
+.column-text p {
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0,0,0.8);
+}
+
+#deal{
+ float: none;
+ margin-top:1em;
+}
+
+#lodge {
+    margin-top:2em;
+    width: 4em;
+}
+
+/*End of Offerings*/
+
+
+
+footer p {
+    font-size: .5rem;
+    text-align:center;
+    margin-top: 20em;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 315px) {
+    .section-title h1 {
+        padding-top: 1em;
+        font-size: 1.1em;
+    }
+    .section-title span {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width:400px) {
+   
+    .nav-link {
+        font-size: .8em;
+    }
+
+@media screen and (min-width: 450px) {
+    .section-title h1 {
+        font-size: 1.6em;
+        
+    }
+    .section-title span {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .section-title h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .section-title h1 {
+        font-size: 2.5em;
+       padding-top: 2em;
+    }
+    .nav-list {
+        font-size: 1.6em;
+    }
+    .hero {
+        padding-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .section-title h1 {
+        font-size: 3em;
+
+    }
+    .section-title span {
+        font-size: 2.3em;
+        
+    }
+    .section-title p {
+        font-size: 2em;
+        margin-bottom: 1em;
+        margin-top: 4em;
+
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .section-title h1{
+        font-size: 3em;
+        line-height: 1.8em;
+    }
+    .section-title span {
+        font-size: 3em;
+        line-height: 1em;
+    }
+    .section-title p{
+        margin-top: 3.5em;
+    }
+    .icon {
+        width:30%;
+    }
+    .deals {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section-title {
+        margin-top: 3em;
+    }
+    
+    .section-title h1 {
+        font-size: 3em;
+    }
+    .section-title span {
+        font-size: 3.5em;
+    }
+    .section-title p {
+        margin-top: 6em;
+    }
+    .icon {
+        width: 15%;
+    }
+    .hero {
+        height: 1000px;
+    }
+}
