@@ -57,8 +57,7 @@
 
 @media screen and (max-width:600px) {
     .hero {
-        background-position: center;
-        background-attachment:initial;
+        
         
     }
 }
