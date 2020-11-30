@@ -50,7 +50,7 @@
     background: url("https://images.unsplash.com/photo-1518085050105-3c33befa5442?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     background-repeat: no-repeat;
     background-position-x: 80%;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 
 }
